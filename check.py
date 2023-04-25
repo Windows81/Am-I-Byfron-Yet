@@ -15,7 +15,7 @@ if __name__ == '__main__':
         r = check()
         d = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
         f.write('\r\n'.join([
-            f"""<p align="center">**As of {d}**</p>""",
+            f"""<p align="center"><strong>As of {d}</strong></p>""",
         ] + (r.lower() != 'zwinplayer64' and [
             f"""<h1 align="center">VisualPlugin is not yet in the Byfron experiment.</h1>""",
             f"""He is still enrolled in the *{r}* channel, or Hyperion might've already seeped into other live channels."""
