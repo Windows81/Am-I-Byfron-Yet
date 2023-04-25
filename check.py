@@ -13,7 +13,7 @@ if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with open('README.md', 'w') as f:
         r = check()
-        d = datetime.datetime.now().strftime('%Y-%M-%d %H:%m:%S UTC')
+        d = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
         f.write('\r\n'.join([
             f"""<p align="center">As of {d}</p>""",
         ] + (r.lower() != 'zwinplayer64' and [
