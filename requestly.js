@@ -6,7 +6,7 @@ window.navigator.msLaunchUri = (url) => {
 	iframe.src = url
 		.replace(/robloxLocale:.._../, "robloxLocale:en_us")
 		.replace(/gameLocale:.._../, "gameLocale:en_us")
-		.replace(/channel:[^\+]*/, "channel:");
+		.replace(/channel:[^\+]*/, "channel:zflag");
 	debugger;
 	document.getElementsByTagName("body")[0].append(iframe);
 };
