@@ -25,6 +25,6 @@ if __name__ == '__main__':
             f"""Congrats!  I am no longer able to run Rsexec, *but* there are tools out there which could help mitigate the problem until Hyperion is fully released.  I used Requestly to force me to remain on the *LIVE* channel (script is in this repository), so I should be safe for now, as of 2023-04-25.  There are other solutions which work for TamperMonkey."""
         ])))
 
-    subprocess.call(f'git add .', stdout=subprocess.PIPE)
-    subprocess.call(f'git commit -m "{d}"', stdout=subprocess.PIPE)
-    subprocess.call('git push', stdout=subprocess.PIPE)
+    subprocess.call(f'git add .', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    subprocess.call(f'git commit -m "{d}"', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    subprocess.call('git push', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
