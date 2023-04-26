@@ -13,6 +13,7 @@ if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with open('README.md', 'w') as f:
         r = check()
+        print(f'Channel: {r}')
         d = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
         f.write('\r\n'.join([
             f"""<p align="center"><strong>As of {d}</strong></p>""",
@@ -24,6 +25,6 @@ if __name__ == '__main__':
             f"""Congrats!  I am no longer able to run Rsexec, *but* there are tools out there which could help mitigate the problem until Hyperion is fully released.  I used Requestly to force me to remain on the *LIVE* channel (script is in this repository), so I should be safe for now, as of 2023-04-25.  There are other solutions which work for TamperMonkey."""
         ])))
 
-    subprocess.call(f'git add .')
-    subprocess.call(f'git commit -m "{d}"')
-    subprocess.call('git push')
+    subprocess.call(f'git add .', stdout=subprocess.PIPE)
+    subprocess.call(f'git commit -m "{d}"', stdout=subprocess.PIPE)
+    subprocess.call('git push', stdout=subprocess.PIPE)
