@@ -1,3 +1,5 @@
-<p align="center"><strong>As of 2023-05-04 01:27:03 UTC</strong></p>
-<h1 align="center">VisualPlugin is not yet in the Byfron experiment.</h1>
-He is currently enrolled in the *LIVE* channel, or Hyperion might've already seeped into other live channels.
+<p align="center"><strong>As of 2023-05-04 00:48:40 UTC</strong></p>
+
+<h1 align="center">The Byfron experiment is joever!</h1>
+
+VisualPlugin is currently enrolled in the *LIVE* channel, but Byfron already deployed their malware to just about every build available.
